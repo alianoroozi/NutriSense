@@ -1,0 +1,16 @@
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+PINECONE_API_KEY = os.getenv("PINECONE_API_KEY")
+LANGCHAIN_API_KEY = os.getenv("LANGCHAIN_API_KEY")
+PINECONE_CLOUD = os.getenv("PINECONE_CLOUD")
+PINECONE_REGION = os.getenv("PINECONE_REGION")
+PINECONE_INDEX_NAME = "nutrisense"
+EMBEDDING_MODEL_NAME = "text-embedding-3-small"
+EMBEDDING_DIMENSION = 1536
+OPENAI_MODEL_NAME = "gpt-4o"
+CHUNK_SIZE = 500
+CHUNK_OVERLAP = 20
