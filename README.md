@@ -1,10 +1,6 @@
 # NutriSense
-Provides smart and sensible dietary nutrition advice.
 
-
-# NutriSense
-
-NutriSense is an AI-driven question-answering assistant providing smart and sensible dietary nutrition advice. Using advanced language models and a knowledge base from the *Encyclopedia of Human Nutrition*, NutriSense answers questions on nutrition, aiding users with reliable, evidence-based information.
+NutriSense is an AI-driven question-answering assistant providing smart and sensible dietary nutrition advice. Using OpenAI gpt-4o and a knowledge base from the *Encyclopedia of Human Nutrition*, NutriSense answers questions on nutrition, aiding users with reliable, evidence-based information.
 
 ## Key Features
 - **Retrieval-Augmented Generation (RAG)**: NutriSense uses RAG to search and retrieve relevant nutrition information from an encyclopedia knowledge base.
@@ -22,13 +18,15 @@ NutriSense is an AI-driven question-answering assistant providing smart and sens
 
 ## Runnning the App Locally
 1. **Set up environment variables**: Make sure to set the following env variables before running the app locally:
+```
 - OPENAI_API_KEY
 - LANGCHAIN_API_KEY
 - PINECONE_API_KEY
 - PINECONE_CLOUD
 - PINECONE_REGION
+```
 
-2. Install the required dependencies:
+2. **Install the required dependencies**:
 ```bash
 pip install poetry
 poetry config virtualenvs.create false
