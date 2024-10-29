@@ -21,10 +21,33 @@ NutriSense is an AI-driven question-answering assistant providing smart and sens
 - **API Server**: A Flask server provides an API to interact with the NutriSense app.
 
 ## Runnning the App Locally
-Make sure to set the following env variables before running the app locally:
+1. **Set up environment variables**: Make sure to set the following env variables before running the app locally:
 - OPENAI_API_KEY
 - LANGCHAIN_API_KEY
 - PINECONE_API_KEY
 - PINECONE_CLOUD
 - PINECONE_REGION
 
+2. Install the required dependencies:
+```bash
+pip install poetry
+poetry config virtualenvs.create false
+poetry install  --no-root
+```
+
+3. **Initialize the Pinecone Index**:
+```bash
+python scripts/init_pinecone.py
+```
+
+4. **Populate the Pinecone Database**:
+- Load and chunk the knowledge base PDF.
+- Store embeddings in the Pinecone index.
+```bash
+python scripts/populate_db.py
+```
+
+5. **Run the app**:
+```bash
+python app.py
+```
