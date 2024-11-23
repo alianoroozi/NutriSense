@@ -6,7 +6,7 @@ NutriSense is an AI-driven question-answering assistant providing smart and sens
 - Retrieval-Augmented Generation (RAG) NutriSense uses RAG to search and retrieve relevant nutrition information from an encyclopedia knowledge base.
 - OpenAI Language Model
 - LangChain LangChain constructs and manages the chain used for retrieval and response generation.
-- Pinecone**: Efficiently stores and retrieves embeddings of text chunks from the knowledge base.
+- Pinecone: Efficiently stores and retrieves embeddings of text chunks from the knowledge base.
 - Flask API
 - GitHub Actions & AWS EC2 Deployment Docker image is automatically pushed to AWS ECR and deployed to an EC2 instance through GitHub Actions for seamless CI/CD.
 
